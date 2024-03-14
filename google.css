@@ -1,10 +1,16 @@
-input {
+.input1 {
   width: 400px;
   display: block;
 }
-img {
+.bild1 {
   width: 300px;
   display: block;
-  margin-top:200px ;
+   
+}
+.bild2 {
+  width: 200px;
+}
 
+.div1 {
+  margin-top:200px;
 }
