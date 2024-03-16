@@ -5,12 +5,21 @@
 .bild1 {
   width: 300px;
   display: block;
-   
-}
-.bild2 {
-  width: 200px;
 }
 
 .div1 {
   margin-top:200px;
+}
+
+ul {
+  display: inline;
+}
+li {
+  display: inline;
+  margin-left: 40px;
+}
+
+.nav{
+  background-color:beige ;
+  padding: 10px;
 }
