@@ -1,0 +1,22 @@
+.div1 {
+  background-color: aquamarine;
+  height: 100px;
+  width: 400px;
+}
+.div2 {
+background-color: blueviolet;
+height: 100px;
+width: 400px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.div3 {
+  background-color: darkcyan;
+  height: 100px;
+  width: 400px;
+}
+
+body {
+
+}
