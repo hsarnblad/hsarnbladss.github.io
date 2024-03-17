@@ -3,10 +3,10 @@ body {
   margin:0px;
 }
 
-ul {
+.navigator ul {
   display: inline;
 }
-li {
+.navigator li  {
   display: inline;
   margin-left: 35px;
 
@@ -17,7 +17,7 @@ padding: 20px;
   
 }
 
-a {
+.navigator a {
   
   color: #ff5757;
   padding: 15px 25px;
@@ -32,9 +32,9 @@ a:hover {
 }
 
 .div1{
-height: 500px;
+height: 600px;
 display: grid;
-grid-template-columns: auto auto;
+grid-template-columns: 50% 50%;
 }
 
 .div1-left {
@@ -49,7 +49,7 @@ grid-template-columns: auto auto;
   margin-top: 100px;
   font-size: 40px;
   font-weight: 400;
-  font-family: birthstone;
+  font-family: Rouge Script;
 }
 
 img{
@@ -60,8 +60,13 @@ img{
 
 .div2 {
   display: grid;
-  grid-template-columns: auto auto;
-  height: 500px;
+  grid-template-columns: 50% 50%;
+  height: 600px;
+  
+}
+
+#om-mig {
+  scroll-behavior: smooth;
 }
 
 .div2-rubrik {
@@ -69,8 +74,141 @@ img{
 }
 
 .div2-left {
+text-align: center;
+
+}
+
+@mixin tablet-and-up {
+  @media screen and (min-width: 769px) { @content; }
+}
+@mixin mobile-and-up {
+  @media screen and (min-width: 601px) { @content; }
+}
+@mixin tablet-and-down  {
+  @media screen and (max-width: 768px) { @content; }
+}
+@mixin mobile-only {
+  @media screen and (max-width: 600px) { @content; }
+}
+
+
+.div2-right ul, li{
+list-style: none;
+padding: 0;
+}
+
+.wrapper{
+
+
+}
+.div2-right h3{
+  color: #ff5757;
+
+}
+.sessions{
+margin-top: 2rem;
+border-radius: 12px;
+position: relative;
+}
+.div2-right li{
+padding-bottom: 1.5rem;
+border-left: 1px solid  #ff5757;
+position: relative;
+padding-left: 20px;
+margin-left: 10px;
+&:last-child{
+  border: 0px;
+  padding-bottom: 0;
+}
+&:before{
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid  #ff5757;
+  box-shadow: 3px 3px 0px  #ff5757;
+  box-shadow: 3px 3px 0px  #ff5757;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+}
+.time{
+color: #2a2839;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+@include mobile-and-up{
+  font-size: .9rem;
+}
+@include mobile-only{
+  margin-bottom: .3rem;
+  font-size: 0.85rem;
+}
+
+}
+.div2-right p{
+color: #4f4f4f;
+    font-family: sans-serif;
+line-height: 1.5;
+margin-top:0.4rem;
+@include mobile-only{
+  font-size: .9rem;
+}
+}
+
+
+
+
+
+
+/*-------------DIV3-----------------------*/
+.div3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 600px;
+
+}
+
+.div3-left {
   text-align: center;
 }
+
+.div3-rubrik {
+  color: #ff5757;
+}
+
+.div4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 600px;
+}
+
+.div4-rubrik {
+  color: #ff5757;
+}
+
+
+
+.div4-left {
+ text-align: center;
+}
+
+.div5 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 600px;
+}
+
+.div5-rubrik {
+  color: #ff5757;
+}
+
+.div5-right {
+ text-align: center;
+}
+
+
 
 /*
 andra färger
